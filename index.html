@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="dynamic-title">today</title>
+    <title>todayanyway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body, html {
             margin: 0;
@@ -14,10 +15,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Atkinson Hyperlegible', sans-serif;
             background-color: #f0f0f0;
         }
-        .centered-text {
+        .center-of-the-universe {
             font-size: 1rem;
             color: #333;
             text-align: center;
@@ -26,8 +27,8 @@
     </style>
 </head>
 <body>
-    <div class="centered-text">
-        TODAY
+    <div class="center-of-the-universe" id="center-of-the-universe">
+        Center of the Universe
     </div>
 
     <script>
@@ -40,8 +41,8 @@
             String(today.getMonth() + 1).padStart(2, '0') + 
             today.getFullYear();
         
-        // Update the title
-        document.getElementById('dynamic-title').textContent = formattedDate;
+        // Update the centered text with the date and "TODAY"
+        document.getElementById('center-of-the-universe').textContent = formattedDate + "today";
     </script>
 </body>
 </html>
